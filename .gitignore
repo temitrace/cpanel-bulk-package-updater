@@ -1,0 +1,24 @@
+# Ignore log files
+*.log
+
+# Ignore package files with real usernames
+basic
+standard
+premium
+enterprise
+
+# Keep only samples
+!examples/*.sample
+
+# Ignore backup files
+*.bak
+*~
+
+# Ignore any files with sensitive data
+secrets/
+private/
+
+# Ignore distribution snapshots
+package_distribution_*.txt
+*_accounts_before.txt
+*_accounts_after.txt
