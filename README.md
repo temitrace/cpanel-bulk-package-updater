@@ -154,24 +154,28 @@ SCRIPT_DIR="/root/cpanel-bulk-package-updater"  # Change to your preferred direc
 DELAY=1  # Seconds between API calls (increase for heavily loaded servers)
 ```
 **📊 Example Output**
+![Script Execution](screenshots/script-running.png)
 ```plaintext
-Bulk Package Assignment Started: 2025-09-30 10:30:45
-Log file: /root/cpanel-bulk-package-updater/bulk_package_update_20250930_103045.log
+Bulk Package Assignment Started: Sat Oct  4 21:31:00 UTC 2025
+Log file: /root/cpanel-bulk-package-updater/bulk_package_update_20251004_221920.log
 
 Checking for package files in /root/cpanel-bulk-package-updater...
-Found: /root/cpanel-bulk-package-updater/basic (145 users)
-Found: /root/cpanel-bulk-package-updater/premium (523 users)
-Found: /root/cpanel-bulk-package-updater/enterprise (89 users)
+Found: /root/cpanel-bulk-package-updater/basic (670 users)
+Found: /root/cpanel-bulk-package-updater/premium (2239 users)
+Found: /root/cpanel-bulk-package-updater/enterprise (231 users)
 
-Processing Premium package from file: /root/cpanel-bulk-package-updater/premium
+This will update all accounts in the package files listed above.
+Do you want to continue? (yes/no): yes
+
+Processing Basic package from file: /root/cpanel-bulk-package-updater/basic
 ----------------------------------------
-[1] UPDATING: user123 (Basic -> Premium)
-[1] SUCCESS: user123 updated to Premium
-[2] UPDATING: user456 (Premium -> Premium)
-[2] SUCCESS: user456 updated to Premium
+[1] UPDATING: user123 (Basic -> Basic)
+[1] SUCCESS: user123 updated to Basic
+[2] UPDATING: user456 (Premium -> Basic)
+[2] SUCCESS: user456 updated to Basic
 ...
 
-Premium Summary: 520 successful, 3 failed, 523 total processed
+Basic Summary: 668 successful, 2 failed, 670 total processed
 ========================================
 ```
 **⚠️ Important Notes**
