@@ -135,11 +135,7 @@ for user in $(ls /var/cpanel/users/); do grep "PLAN=" /var/cpanel/users/$user; d
 ```
 Compare before and after:
 ```bash
-echo "=== BEFORE ==="
-cat package_distribution_before.txt
-echo ""
-echo "=== AFTER ==="
-cat package_distribution_after.txt
+echo "=== BEFORE ==="; cat package_distribution_before.txt; echo ""; echo "=== AFTER ==="; cat package_distribution_after.txt
 ```
 Verify specific accounts were updated:
 ```bash
