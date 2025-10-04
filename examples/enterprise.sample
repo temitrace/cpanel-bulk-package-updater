@@ -1,0 +1,7 @@
+# Sample file for Enterprise package users
+# Add one username per line
+# Lines starting with # are comments and will be ignored
+
+user10
+user11
+user12
